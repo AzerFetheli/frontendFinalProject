@@ -1,0 +1,55 @@
+.viewCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link1 {
+    margin-top: 15px;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    background-color: rgb(38, 37, 37);
+    color: white;
+}
+.viewCardContainer {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inViewCard {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.myLittleCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.littleCard {
+    gap: 20px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.littleCard p {
+    width: 18%;
+}
+.littleCard img {
+    width: 18%;
+}
+.littleCard div {
+    width: 18%;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

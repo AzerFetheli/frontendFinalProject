@@ -1,0 +1,69 @@
+.sectionTwo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.sectionTwoContainer {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sectionTwoCard {
+    width: 370px;
+    height: 225px;
+    overflow: hidden;
+}
+.sectionTwoCard img {
+    transition: 0.9s ease;
+    width: 100%;
+}
+.sectionTwoCard:hover img{
+    transform: scale(1.04);
+    transition: 0.9s ease;
+}
+@media only screen and (max-width: 1200px) {
+    .sectionTwoCard {
+        width: 320px;
+    }
+    .sectionTwoContainer {
+        max-width: 1050px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .sectionTwoCard {
+        width: 280px;
+        height: auto;
+    }
+    .sectionTwoContainer {
+        max-width: 950px;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .sectionTwoCard {
+        width: 30%;
+        height: auto;
+    }
+    .sectionTwoContainer {
+        max-width: 800px;
+    }
+    .sectionTwo {
+        margin: 25px 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .sectionTwoCard {
+        width: 100%;
+        height: auto;
+       
+    }
+    .sectionTwoContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

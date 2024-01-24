@@ -1,0 +1,96 @@
+.sale {
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.discount {
+    width: 60px;
+    height: 20px;
+    background-color: #8a8f6a;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.soldOut {
+    height: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.close {
+    display: none;
+}
+.sliderProductText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgb(38, 37, 37);
+    gap: 10px;
+}
+.sliderProductText p {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+.price {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    gap: 10px;
+}
+.priceJustify {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.discountPrice {
+    color: #8a8f6a !important;
+    text-decoration: line-through;
+}
+.soldOutCard {
+    cursor: not-allowed;
+}
+.Card {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(38, 37, 37);
+}
+button {
+    padding: 5px;
+    background-color: rgb(38, 37, 37);
+    color: white;
+}
+
+.addToCard {
+    border: none;
+    cursor: pointer;
+}
+
+/* .Card :hover .price {
+    display: none;
+}
+.Card :hover .addToCard {
+    display: block;
+} */

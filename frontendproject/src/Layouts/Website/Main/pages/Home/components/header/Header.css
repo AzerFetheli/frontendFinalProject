@@ -1,0 +1,103 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+.headerContainer {
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.headerLeftInfo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.phone i {
+    font-size: 11px;
+}
+.phone span {
+    font-size: 14px;
+
+    color: rgb(25, 25, 25);
+}
+.email span {
+    font-size: 14px;
+    color: rgb(25, 25, 25);
+}
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.socialLinks i {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.socialLinks i:hover {
+    color: #8a8f6a;
+}
+.link {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.userDropDown.closeUser {
+    display: flex;
+}
+.setting {
+    position: relative;
+}
+.userDropDown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 30px 10px 10px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 9999;
+    user-select: none;
+}
+@media only screen and (max-width: 720px) {
+    .headerContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .headerLeft {
+        flex-direction: column;
+        gap: 20px;
+        order: 2;
+    }
+    .headerRight {
+        order: 1;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .headerLeftInfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

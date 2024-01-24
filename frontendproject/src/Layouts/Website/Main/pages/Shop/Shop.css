@@ -1,0 +1,238 @@
+.shopMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.shopContainer {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.shopFilter {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.shopPaginate {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.shopProductsBody {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+
+.sale {
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.close {
+    display: none;
+}
+.shopSliderProductText {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(38, 37, 37);
+    gap: 10px;
+}
+.shopSliderProductText p {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+.shopSliderProductImg {
+    position: relative;
+    width: 100%;
+}
+.shopSliderProductImg img {
+    width: 100%;
+}
+.shopPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    gap: 10px;
+}
+.shopPriceJustify {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.discountPrice {
+    color: #8a8f6a !important;
+    text-decoration: line-through;
+}
+.soldOutCard {
+    cursor: not-allowed;
+}
+.soldOut {
+    height: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.discount {
+    width: 60px;
+    height: 20px;
+    background-color: #8a8f6a;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shopCard {
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(38, 37, 37);
+}
+.shopCardFlex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    padding: 5px;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    cursor: pointer;
+}
+
+.addToCard {
+    border: none;
+    cursor: pointer;
+}
+
+.shopFilter label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.checkboxFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.shopPagination {
+    display: flex;
+    gap: 10px;
+}
+
+.shopPagination button,
+.paginationButton {
+    width: 40px;
+    height: 40px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter-Regular;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 200ms;
+    border: none;
+}
+
+.paginationButton.disabled:hover {
+    background-color: #eeeeee;
+    color: #c0abab;
+}
+
+.paginationButton.activeButton {
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+
+.shopPagination button.disabled:hover {
+    background-color: #eeeeee;
+    color: #c0abab;
+}
+
+.shopPagination button:hover {
+    background-color: black;
+    color: white;
+}
+
+.shopPagination i {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .shopContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .shopFilter {
+        width: 100%;
+        order: 2;
+    }
+
+    .shopProductsBody {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shopFilter {
+        gap: 16px;
+    }
+
+    .shopFilter label {
+        font-size: 14px;
+    }
+
+    .shopPaginate {
+        width: 100%;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .shopProductsBody {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,137 @@
+.checkOut {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.checkOutContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+.checkOutForm {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 55%;
+    background-color: white;
+    gap: 30px;
+}
+.checkOutText1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.checkOutContactInputs input,
+.adressInput {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    padding-left: 20px;
+    font-size: 15px;
+}
+.checkOutDeliveryInputs,
+.checkOutContactInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.checkOutDeliveryInputs div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.checkOutDeliveryInputs div input {
+    width: 49%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.checkOutProducts {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.checkOutProducts1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.checkOutProducutsData {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.checkOutProductImage {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.checkOutProductImage span {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkOutProductImage img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+.checkOutProducts2 {
+    display: flex;
+    justify-content: space-between;
+}
+.emptyCheckOut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.emptyCheckOut img {
+    width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .checkOutContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .checkOutForm {
+        width: 100%;
+        padding: 0;
+    }
+
+    .checkOutProducts {
+        width: 100%;
+    }
+
+    .checkOutDeliveryInputs div {
+        flex-direction: column;
+    }
+
+    .checkOutDeliveryInputs div input {
+        width: 100%;
+    }
+}

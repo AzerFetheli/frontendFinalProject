@@ -1,0 +1,140 @@
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sliderImage {
+    background-image: url("https://boyka-demo.myshopify.com/cdn/shop/files/slider-h3-bg-1.jpg?v=1613793753");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sliderImage1 {
+    background-image: url("https://boyka-demo.myshopify.com/cdn/shop/files/slider-h3-bg-2.jpg?v=1613793753");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.swiper-button-prev {
+    color: white !important;
+}
+.swiper-button-next {
+    color: white !important;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    gap: 20px;
+    text-align: left;
+}
+.text1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.text2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.text3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+.text4 {
+    font-weight: 400;
+    font-size: 15px;
+}
+.shopNow {
+    width: 150px;
+    padding: 15px;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sliderImage1 .text {
+    color: black;
+}
+.sliderImage1 .shopNow {
+    background: #ffffff;
+    color: black;
+}
+@media only screen and (max-width: 1500px) {
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .swiper-button-next {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .text {
+        top: 18%;
+        left: 20%;
+    }
+}
+@media only screen and (max-width: 730px) {
+    .text {
+        top: 10%;
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sectionOne{
+    padding: 0 20px;
+
+    }
+    .sliderImage {
+        height: 70vh;
+    }
+    .sliderImage1 {
+        height: 70vh;
+    }
+    .text {
+        top: 15%;
+        left: 5%;
+    }
+    .text1 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .text2 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .text3 {
+        font-size: 12px;
+    }
+    .text4 {
+        font-size: 12px;
+    }
+}

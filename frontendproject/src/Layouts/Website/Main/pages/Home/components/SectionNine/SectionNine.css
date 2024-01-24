@@ -1,0 +1,86 @@
+.sectionNine {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://boyka-demo.myshopify.com/cdn/shop/files/02.jpg?v=1613793679");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0 20px !important;
+}
+.sectionNineText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 25px;
+    top: 20%;
+    left: 30%;
+}
+.sectionNineText1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.sectionNineText1 h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+.sectionNineText1 p {
+    font-size: 21px;
+    font-weight: 400%;
+    margin-bottom: 10px;
+}
+.sectionNineText2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: white;
+}
+.sectionNineText3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 1100px) {
+  .sectionNineText1 img{
+    width: 80%;
+  }
+    
+}
+@media only screen and (max-width: 930px) {
+    .sectionNineText{
+        left: 22%;
+    }
+    .sectionNineText1 img{
+        width: 70%;
+    }
+    .sectionNine{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .sectionNineText{
+        left: 10%;
+    }
+    .sectionNine{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .sectionNineText{
+        left: 0%;
+    }
+    .sectionNine{
+        height: 80vh;
+    }
+    
+}

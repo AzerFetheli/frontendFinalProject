@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+   
+}
+section{
+    margin-bottom: 20px;
+}
+
+.headerLayout.hidden {
+    display: none;
+  }
+  
+  .navbarLayout.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  

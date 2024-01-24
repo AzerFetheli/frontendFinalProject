@@ -1,0 +1,103 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(38, 37, 37);
+} */
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sectionThree {
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://boyka-demo.myshopify.com/cdn/shop/files/01.jpg?v=1613792601");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionThreeContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.sectionThreeLeft {
+    width: 50%;
+}
+.sectionThreeRight {
+    width: 50%;
+}
+.SliderProductImg {
+    position: relative;
+    width: 100%;
+}
+.cardFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardFlex button{
+    background-color:#6C757D ;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .sectionThreeLeft {
+        display: none;
+    }
+    .sectionThreeRight {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionThreeContainer {
+        width: 500px;
+    }
+
+    .sectionThreeRight {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .sectionThreeContainer {
+        width: 400px;
+    }
+
+    .sectionThreeRight {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .sectionThreeContainer {
+        width: 300px;
+    }
+
+    .sectionThreeRight {
+        width: 100%;
+    }
+}

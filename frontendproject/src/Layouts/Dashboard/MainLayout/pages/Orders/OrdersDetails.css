@@ -1,0 +1,15 @@
+.tableDetails .tableDetailsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tableDetails .tableDetailstd,.tableDetailsth {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tableDetails .tableDetailsth {
+    background-color: #f2f2f2;
+}

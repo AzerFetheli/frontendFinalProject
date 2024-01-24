@@ -1,0 +1,21 @@
+.adminModal {
+    padding: 50px 80px;
+    background-color: white;
+}
+
+.adminModalOverlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.605);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminModalOverlay.visible {
+    display: flex;
+}
