@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./DashBoardHome.css";
+import { API } from "../../../../../axios";
 export default function DashBoardHome() {
+  const [allOrders, setAllOrders] = useState([]);
+  useEffect(() => {
+    API.get("dashboard/orders?page=1&perPage=999").then((res) => {
+      setAllOrders(res.data.data.data);
+    });
+  }, []);
+
+  const pendingOrders = [];
+  allOrders.find((item) => {
+    if (item.status === "pending") {
+      pendingOrders.push(item);
+    }
+  });
+
+  const processingOrder = [];
+  allOrders.find((item) => {
+    if (item.status === "proccesing") {
+      processingOrder.push(item);
+    }
+  });
+
+  const deliveredOrder = [];
+  allOrders.find((item) => {
+    if (item.status === "delivered") {
+      deliveredOrder.push(item);
+    }
+  });
 
   return (
     <>
@@ -67,7 +95,7 @@ export default function DashBoardHome() {
             </div>
             <div>
               <p className="dashboardText4"> Total Order </p>
-              <p className="dashboardText5"> 712 </p>
+              <p className="dashboardText5"> {allOrders.length} </p>
             </div>
           </div>
           <div className="dashboardOrderStatisticsBlock2">
@@ -76,7 +104,7 @@ export default function DashBoardHome() {
             </div>
             <div>
               <p className="dashboardText4"> Orders Pending </p>
-              <p className="dashboardText5"> 124 </p>
+              <p className="dashboardText5"> {pendingOrders?.length} </p>
             </div>
           </div>
           <div className="dashboardOrderStatisticsBlock3">
@@ -85,7 +113,7 @@ export default function DashBoardHome() {
             </div>
             <div>
               <p className="dashboardText4"> Orders Processing </p>
-              <p className="dashboardText5"> 341 </p>
+              <p className="dashboardText5"> {processingOrder?.length} </p>
             </div>
           </div>
           <div className="dashboardOrderStatisticsBlock4">
@@ -94,11 +122,11 @@ export default function DashBoardHome() {
             </div>
             <div>
               <p className="dashboardText4"> Orders Delivered </p>
-              <p className="dashboardText5"> 412 </p>
+              <p className="dashboardText5"> {deliveredOrder.length} </p>
             </div>
           </div>
         </div>
-        <img src="../../../../../src/assets/1.jpg"  />
+        <img src="../../../../../src/assets/1.jpg" />
       </div>
     </>
   );

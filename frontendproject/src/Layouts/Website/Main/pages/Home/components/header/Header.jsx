@@ -15,6 +15,7 @@ export default function Header() {
     setTimeout(() => {
       navigate("/")
     }, 1000);
+    location.href = "/";
   };
 
   return (

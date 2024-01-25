@@ -10,7 +10,7 @@ import { BasketContext } from "../../../../context/BasketContext";
 const SiteLogin = () => {
   const navigate = useNavigate();
   const { setUser } = useContext(userContext);
-  const { basket,setBasket,setBackBasket } = useContext(BasketContext);
+  const { basket, setBasket, setBackBasket } = useContext(BasketContext);
 
   const onFinish = (values) => {
     console.log("Success:", values);
@@ -18,27 +18,38 @@ const SiteLogin = () => {
       .then(({ data }) => {
         console.log(data);
         localStorage.setItem("token", data.data.token);
-        if (data.data.user ) {
-            if(([]).length > 0) {
-                const formattedBasket = basket.map((item) => ({
-                    productId: item._id,
-                    productCount: item.productCount,
-                  }));
-                  console.log(formattedBasket);
-                  APIwithToken(data.data.token)
-                  .post("/site/basket", { basket: formattedBasket }).then((res) => {
-                    setBasket([]);
-                    setUser(data.data.user);
-                    navigate("/");
-                    location.href = '/';
-                  });
-            } else {
-                // setBasket([]);
-                setUser(data.data.user);
-                location.href = '/';
-            }
+        if (data.data.user) {
+          if ((basket || []).length > 0) {
+            const formattedBasket = basket.map((item) => ({
+              productId: item._id,
+              productCount: item.productCount,
+            }));
 
-        } 
+            console.log(formattedBasket);
+
+            const postmanBasket = formattedBasket.map((item) => ({
+              productId: item.productId,
+              productCount: item.productCount,
+            }));
+            console.log(postmanBasket);
+
+            const postmanRequest = { basket: postmanBasket };
+            console.log(postmanRequest);
+
+            APIwithToken(data.data.token)
+              .post("/site/basket", postmanRequest)
+              .then((res) => {
+                setBasket([]);
+                setUser(data.data.user);
+                navigate("/");
+                location.href = "/";
+              });
+          } else {
+            setBasket([]);
+            setUser(data.data.user);
+            location.href = "/";
+          }
+        }
       })
       .catch((err) => {
         console.log(err);

@@ -17,8 +17,7 @@
     "react-dom": "^18.2.0",
     "react-range": "^1.8.14",
     "react-router-dom": "^6.20.1",
-    "swiper": "^11.0.5",
-    "recharts":"^2.7.2"
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

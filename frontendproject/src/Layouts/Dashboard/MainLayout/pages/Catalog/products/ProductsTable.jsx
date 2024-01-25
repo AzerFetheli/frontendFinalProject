@@ -197,7 +197,7 @@ const ProductsTable = ({ data, getProduct }) => {
       width: "7%",
       render: (isPublish, record) => (
         <Switch
-          checked={isPublish}
+        defaultValue={isPublish}
           onChange={(checked) => handlePublishChange(checked, record)}
         />
       ),
